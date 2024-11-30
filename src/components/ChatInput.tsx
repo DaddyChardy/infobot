@@ -19,7 +19,7 @@ const ChatInput = ({ id }: { id?: string }) => {
   const [loading, setLoading] = useState(false);
 
   const { data: model } = useSWR("model", {
-    fallbackData: "Chat GPT 4o Mini",
+    fallbackData: "gpt-4-turbo",
   });
 
   // const model = "gpt-4-turbo";
