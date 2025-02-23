@@ -11,6 +11,8 @@ import ModelSelection from "./ModelSelection";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+
+
 const SideBar = () => {
   const { data: session } = useSession();
   const [chats, loading] = useCollection(

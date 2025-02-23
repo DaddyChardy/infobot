@@ -11,6 +11,15 @@ import { TbPaperclip } from "react-icons/tb";
 import ModelSelection from "./ModelSelection";
 import useSWR from "swr";
 
+interface ChatInputProps {
+   id?: string;
+   userEmail: string;
+   userName: string;
+   userImage: string;
+   prompt: string; // Add
+   setPrompt: (prompt: string) => void; // Add
+ }
+
 const ChatInput = ({ id }: { id?: string }) => {
   const chatId = id;
   const router = useRouter();
